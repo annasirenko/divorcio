@@ -1,10 +1,10 @@
-.news{
+.news {
     min-height: 17.3rem;
     background-color: #f3f3f3;
     padding: 3.3rem 0;
-   
 
-    &__container{
+
+    &__container {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -12,20 +12,21 @@
         @include container;
     }
 
-    &__title{
+    &__title {
         font-size: 2.8rem;
         font-weight: bold;
     }
 
-    &__list{
+    &__list {
         display: flex;
         align-items: center;
         margin-top: 4rem;
     }
-    &__item{
-        &:not(:first-child){
+
+    &__item {
+        &:not(:first-child) {
             margin-left: 5rem;
         }
     }
-    
+
 }
