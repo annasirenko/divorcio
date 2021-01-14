@@ -1,0 +1,78 @@
+$red:#CC2229;
+$dark-red: #9F041B;
+$main-text: #575C6B;
+$violet: #6E61F5;
+$orange-text: #FF6E00;
+$footer:#9095A4;
+// $orange: linear-gradient(0deg, rgba(255,166,0,1) 0%, rgba(255,120,0,1) 66%, rgba(255,109,0,1) 100%);
+$orange:linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
+$wine: linear-gradient(180deg, rgba(248,0,0,1) 0%, rgba(159,4,27,1) 100%);
+
+
+
+@mixin button {  
+  border-radius: .5rem;
+  background-color: $red;  
+  color: #fff;
+  font-weight: bold;
+  padding: 1.3rem 3.3rem 1.3rem 3.3rem;
+  transition: all .3s ease-in-out;
+}
+
+@mixin container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 160rem;
+  @include laptop{
+    max-width: 120rem;
+  }
+  @include tabletsPro{
+    max-width: 98rem;
+    width: 100%;
+  }
+  @include tablets{
+    max-width: 73.6rem;
+  }
+}
+
+@mixin desktopHd(){
+  @media screen and (max-width: 2560px) {
+    @content;
+  }
+}  
+
+@mixin desktopLg(){
+  @media screen and (max-width: 1980px) {
+    @content;
+  }
+}
+
+@mixin desktop(){
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+@mixin laptop(){
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin tabletsPro() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

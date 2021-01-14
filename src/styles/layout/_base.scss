@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  height: 100%;
+
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #575C6B;
+  background-color: #fff;
+  animation: opening 1s ease-in-out;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #575C6B;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 160rem;
+
+  @include laptop {
+    max-width: 120rem;
+  }
+
+  @include tabletsPro {
+    max-width: 98rem;
+    width: 100%;
+  }
+
+  @include tablets {
+    max-width: 73.6rem;
+  }
+
+}
+
+
+@keyframes opening {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

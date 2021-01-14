@@ -1,0 +1,68 @@
+.header{
+  &__main{
+    min-height: 8vh;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    
+    
+    &--logo{
+      // flex: 1 1 0rem;
+    }
+
+  }
+}
+
+.navbar{
+  display: flex;
+  // flex: 2 1 20rem;
+   
+}
+
+.nav{
+  &__list{
+    display: flex;  
+    align-items: center;
+    
+  }
+  &__item{
+    font-size: 1.4rem;
+    &:not(:first-child){
+      margin-left: 5.2rem;
+    }
+    &:last-child{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &:nth-child(6){
+      @include button;
+      
+    }
+    & a{
+      
+      &:hover,&:focus{
+        color: $orange-text;
+      }
+    }
+   
+    @include laptop{
+      font-size: 1rem;
+    }
+  }
+}
+
+.button{
+  cursor: pointer;
+  &:hover,&:focus{
+    background-color:$dark-red;
+  }
+  & a{    
+      color: #fff;
+      text-transform: uppercase;
+      &:hover{
+        color: #fff;
+      }
+    
+  }
+}
