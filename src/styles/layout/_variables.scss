@@ -19,9 +19,7 @@ $wine: linear-gradient(180deg, rgba(248,0,0,1) 0%, rgba(159,4,27,1) 100%);
   transition: all .3s ease-in-out;
 }
 
-@mixin container {
-  display: flex;
-  justify-content: space-between;
+@mixin container {  
   width: 90%;
   margin: 0 auto;
   max-width: 160rem;
