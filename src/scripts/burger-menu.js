@@ -22,3 +22,5 @@ close.addEventListener("click", () => {
     close.classList.toggle("close-btn--close");
   });
 
+  new WOW().init();
+

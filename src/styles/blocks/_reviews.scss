@@ -1,7 +1,8 @@
 .reviews {
     padding: 7rem 0 5.3rem 0;
     position: relative;
-    @include phones{
+
+    @include phones {
         padding-top: 4rem;
     }
 
@@ -20,10 +21,12 @@
     &__title {
         font-size: 3.6rem;
         font-weight: 700;
-        @include tabletsPro{
+
+        @include tabletsPro {
             font-size: 3.2rem;
         }
-        @include phones{
+
+        @include phones {
             font-size: 2.4rem;
         }
     }
@@ -35,7 +38,7 @@
         margin-top: 3.8rem;
         margin-bottom: 3.5rem;
         position: relative;
-        
+
     }
 
     &__slide {
@@ -47,6 +50,12 @@
 
         &:not(:first-child) {
             margin-left: 3.3rem;
+        }
+
+        @include phones {
+            width: 34.3rem;
+            height: 28.4rem;
+            padding: 2.8rem 2.4rem 3rem 2.4rem;
         }
     }
 
@@ -70,14 +79,33 @@
     &__user {
         font-size: 1.8rem;
         font-weight: bold;
-        margin-right: 12.8rem;
+        // margin-right: 12.8rem;
+        margin-right: 20.8rem;
+        ;
         margin-bottom: .9rem;
+
+        @include desktopLg {
+            margin-right: 15rem;
+        }
+
+        @include laptop {
+            margin-right: 6.8rem;
+        }
+
+        @include tabletsPro {
+            margin-right: 0;
+            font-size: 1.6rem;
+        }
     }
 
     &__date {
         font-size: 1.4rem;
         color: rgba(74, 74, 74, 0.47);
         padding-bottom: 3rem;
+
+        @include tabletsPro {
+            display: none;
+        }
     }
 
     &__review {
@@ -93,9 +121,30 @@
         font-size: 1rem;
         color: #FF7100;
         margin-top: 1rem;
-        margin-left: 37rem;
+        margin-left: 45rem;
         padding-left: 1rem;
         background: url('./img/icons/success-orange.svg') no-repeat left 0;
+
+        @include desktopLg {
+            margin-left: 40rem;
+        }
+
+        @include laptop {
+            margin-left: 31rem;
+        }
+
+        @include tabletsPro {
+            margin-left: 0rem;
+            margin-top: 0;
+        }
+    }
+
+    &__wrap {
+        @include tabletsPro {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
     }
 
     &__more {
@@ -103,7 +152,8 @@
         justify-content: center;
         font-weight: bold;
         color: $orange-text;
-        @include phones{
+
+        @include phones {
             display: none;
         }
     }
@@ -119,7 +169,8 @@
 .arrow {
     background-color: transparent;
     outline: none;
-    @include phones{
+
+    @include phones {
         display: none;
     }
 
@@ -136,4 +187,43 @@
         right: 12%;
     }
 
+}
+
+.small-date {
+    display: none;
+
+    @include tabletsPro {
+        display: block;
+        font-size: 1.4rem;
+        color: rgba(74, 74, 74, 0.47);
+
+    }
+}
+
+.dots__container {
+    display: none;
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & .dot {
+            cursor: pointer;
+            margin: 0.5rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: #c4c4c4;
+
+            // border: 1px solid #ffffff;
+            &.active {
+                background-color: $orange-text;
+            }
+        }
+    }
 }

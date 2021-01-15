@@ -33,16 +33,16 @@
                     <li class="nav__item"><a href="#compromise">FAQ</a></li>
                     <li class="nav__item"><a href="#footer">Contáctenos</a></li>
                     <li class="nav__item button"><a href="#hero">Empezar </a></li>
-                    <li class="nav__item"><a href="#">Iniciar Sesión </a></li>                    
+                    <li class="nav__item"><a href="#">Iniciar Sesión </a></li>
                 </ul>
-                <a href="#hero" class="button button__sm">Empezar </a></li>
+                <a href="#hero" class="button button__sm">Empezar </a>
             </nav>
         </div>
     </header>
     <main class="main">
         <section id="hero" class="hero">
             <div class="hero__container">
-                <div class="hero__desc">
+                <div class="hero__desc animate__animated animate__fadeInLeft wow">
                     <h1 class="hero__title">
                         Comience Su Divorcio Online <br> Sin Honorarios de Abogados
                     </h1>
@@ -112,33 +112,34 @@
                             </div>
                         </div>
                         <div class="form__right">
-                            <div class=" form__group form__group--right">
-                                <select name="state" id="state__selection" class="form__select custom-select full">
+                            <div class="form__group form__group--right">
+                                <select name="state" id="state__selection--full" class="form__select custom-select full">
                                     <option value="" selected disabled>Seleccione su estado</option>
                                     <option value="alabama">Alabama</option>
                                     <option value="alaska">Alaska</option>
                                 </select>
                                 <input type="text" class="form__input--short" name="phone" required
                                     placeholder="Nombre">
-                                    <input type=" text" class="form__input--short small input" name="last_name" required
-                                    placeholder="Apellido" >
+                                <input type="text" class="form__input--short small input" name="last_name" required
+                                    placeholder="Apellido">
                             </div>
                             <div class="form__group">
                                 <input type="text" class="form__input--long" name="email " required
-                                    placeholder="Ingrese su email" >
-                                    <select name="state" id="state__selection" class="form__select custom-select small select">
-                                        <option value="" selected disabled>Seleccione su estado</option>
-                                        <option value="alabama">Alabama</option>
-                                        <option value="alaska">Alaska</option>
-                                    </select>
-                                    <input type=" text" class="form__input--short full" name="last_name" required
-                                    placeholder="Apellido" >
-                                    
-                                </div>
-                                <button class=" btn__form" type="submit">Verificar elegibilidad</button>
-                                <p class="form__terms">Al hacer clic en “Verificar Elegibilidad”, usted acepta los
-                                    Términos y Condiciones</p>
+                                    placeholder="Ingrese su email">
+                                <select name="state" id="state__selection"
+                                    class="form__select custom-select small select">
+                                    <option value="" selected disabled>Seleccione su estado</option>
+                                    <option value="alabama">Alabama</option>
+                                    <option value="alaska">Alaska</option>
+                                </select>
+                                <input type="text" class="form__input--short full" name="last_name" required
+                                    placeholder="Apellido">
+
                             </div>
+                            <button class=" btn__form" type="submit">Verificar elegibilidad</button>
+                            <p class="form__terms">Al hacer clic en “Verificar Elegibilidad”, usted acepta los
+                                Términos y Condiciones</p>
+                        </div>
                     </form>
 
                 </div>
@@ -149,7 +150,7 @@
         <section id="steps" class="steps">
             <h2 class="steps__title">Solo cuatro pasos
             </h2>
-            <ul class="steps__list">
+            <ul class="steps__list animate__animated animate__fadeInUp wow">
                 <li class="steps__item">
                     <img src="./img//icons/solo-1.svg" alt="step" class="steps__img">
                     <p class="steps__text text__first">
@@ -196,11 +197,11 @@
                     <picture>
                         <source srcset="./img/bg-2-sm.png" media="(max-width: 1024px)">
                         <source srcset="./img/bg-2.png" media="(max-width: 2560px)">
-                            <img src="./img/bg-2.png" srcset="./img/bg-2.png" alt="freedom picture">
+                        <img src="./img/bg-2.png" srcset="./img/bg-2.png" alt="freedom picture">
                     </picture>
                 </div>
 
-                <ul class="freedom__list">
+                <ul class="freedom__list animate__animated animate__fadeInRight wow">
                     <li class="freedom__item">
                         <h3>Barato y conveniente</h3>
                         <p>Nuestro proceso simple y económico le permitirá completar sus documentos de divorcio desde la
@@ -230,7 +231,7 @@
                 <h2 class="news__title">
                     Divorcio en línea en las noticias
                 </h2>
-                <ul class="news__list">
+                <ul class="news__list animate__animated animate__fadeInUp wow">
                     <li class="news__item"><a href="#"><img src="./img/media-1.png" alt="media-1"></a></li>
                     <li class="news__item"><a href="#"><img src="./img/media-2.png" alt="media-2"></a></li>
                     <li class="news__item"><a href="#"><img src="./img/media-3.png" alt="media-3"></a></li>
@@ -285,7 +286,7 @@
 
 
                     </div>
-                    <div class="advantages__right">
+                    <div class="advantages__right animate__animated animate__fadeInRight wow ">
                         <div class="advantages__card">
                             <img src="./img/icons/logo-white.svg" alt="logo" class="advantages__card--logo">
                             <h3 class="advantages__card--title">La principal herramienta de <br> divorcio disputado</h3>
@@ -311,11 +312,11 @@
                         <ul class="advantages__partners_list">
                             <li class="advantages__partners_item"><a href="#"><img src="./img/partner-1.png"
                                         alt="partner-1"></a></li>
-                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-2.png"" alt="
+                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-2.png" alt="
                                         partner-2"></a></li>
-                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-3.png"" alt="
+                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-3.png" alt="
                                         partner-3"></a></li>
-                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-4.png"" alt="
+                            <li class="advantages__partners_item"><a href="#"><img src="./img/partner-4.png" alt="
                                         partner-4"></a></li>
                         </ul>
 
@@ -330,7 +331,7 @@
                 </h2>
                 <p class="compromise__subtitle">Nuestras herramientas han ayudado a más de 500,000 personas a
                     divorciarse rápidamente y sin estrés <br> mientras ahorran dinero en el proceso.</p>
-                <ul class="compromise__list">
+                <ul class="compromise__list animate__animated animate__fadeInUp wow">
                     <li class="compromise__item">
                         <div class="compromise__block">
                             <img src="./img/icons/compromiso-1.svg" alt="compromiso-1">
@@ -397,8 +398,8 @@
         <section id="reviews" class="reviews">
             <div class="reviews__container">
                 <h2 class="reviews__title">Opiniones de OnlineDivorce</h2>
-                <div class="reviews__slider  ">
-                    <ul class="reviews__list ">
+                <div class="reviews__slider glider-contain">
+                    <ul class="reviews__list glider">
                         <li class="reviews__slide">
                             <div class="reviews__block">
                                 <img src="./img/testimonial.jpeg" alt="" class="reviews__avatar">
@@ -422,8 +423,11 @@
                                 ¡Lo recomiendo!
 
                             </div>
-                            <div class="reviews__buyer">
-                                Verified Buyer
+                            <div class="reviews__wrap">
+                                <div class="small-date">Aug 2018</div>
+                                <div class="reviews__buyer">
+                                    Verified Buyer
+                                </div>
                             </div>
                         </li>
                         <li class="reviews__slide">
@@ -449,35 +453,11 @@
                                 ¡Lo recomiendo!
 
                             </div>
-                            <span class="reviews__buyer">
-                                Verified Buyer
-                            </span>
-                        </li>
-                        <!-- <li class="reviews__slide">
-                            <div class="reviews__block">
-                                <img src="./img/testimonial.jpeg" alt="" class="reviews__avatar">
-                                <div class="reviews__info">
-                                    <div class="reviews__user">Kilpatrick B., Ontario</div>
-                                    <span class="reviews__stars">
-                                        <i class="star"></i>
-                                        <i class="star"></i>
-                                        <i class="star"></i>
-                                        <i class="star"></i>
-                                        <i class="star"></i>
-                                    </span>
-
-                                </div>
-                                <div class="reviews__date">Aug 2018</div>
-                            </div>
-                            <div class="reviews__review">
-                                OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso,
-                                resultó ser muy útil. Pensarías que no puedes esperar recibir soporte online
-                                profesional. Pero OD sorprende. Todos los formularios estuvieron preparados a tiempo.
-                                ¡Lo recomiendo!
-
-                            </div>
-                            <div class="reviews__buyer">
-                                Verified Buyer
+                            <div class="reviews__wrap">
+                                <div class="small-date">Aug 2018</div>
+                                <span class="reviews__buyer">
+                                    Verified Buyer
+                                </span>
                             </div>
                         </li>
                         <li class="reviews__slide">
@@ -503,18 +483,55 @@
                                 ¡Lo recomiendo!
 
                             </div>
-                            <span class="reviews__buyer">
-                                Verified Buyer
-                            </span>
-                        </li> -->
+                            <div class="reviews__wrap">
+                                <div class="small-date">Aug 2018</div>
+                                <div class="reviews__buyer">
+                                    Verified Buyer
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__slide">
+                            <div class="reviews__block">
+                                <img src="./img/testimonial.jpeg" alt="" class="reviews__avatar">
+                                <div class="reviews__info">
+                                    <div class="reviews__user">Kilpatrick B., Ontario</div>
+                                    <span class="reviews__stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                    </span>
 
+                                </div>
+                                <div class="reviews__date">Aug 2018</div>
+                            </div>
+                            <div class="reviews__review">
+                                OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso,
+                                resultó ser muy útil. Pensarías que no puedes esperar recibir soporte online
+                                profesional. Pero OD sorprende. Todos los formularios estuvieron preparados a tiempo.
+                                ¡Lo recomiendo!
+
+                            </div>
+                            <div class="reviews__wrap">
+                                <div class=" small-date">Aug 2018</div>
+                                <div class="reviews__buyer">
+                                    Verified Buyer
+                                </div>
+                            </div>
+                        </li>
 
 
                     </ul>
-                    <button type="button" class="arrow arrow__prev"><img src="./img/icons/arrow.svg"
+                    <button type="button" class="arrow arrow__prev glider-prev"><img src="./img/icons/arrow.svg"
                             alt="arrow"></button>
-                    <button type="button" class="arrow arrow__next"><img src="./img/icons/arrow.svg"
+                    <button type="button" class="arrow arrow__next glider-next"><img src="./img/icons/arrow.svg"
                             alt="arrow"></button>
+                    <div class="dots__container">
+                        <span class="dots"></span>
+                        <span class="dots"></span>
+                        <span class="dots"></span>
+                    </div>
                     <a href="#" class="reviews__more">Ver todas las opiniones de los clientes
                     </a>
 
@@ -629,7 +646,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./main.min.js"></script>
 </body>
 
