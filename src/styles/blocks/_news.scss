@@ -15,17 +15,41 @@
     &__title {
         font-size: 2.8rem;
         font-weight: bold;
+        @include tabletsPro{
+            font-size: 3.2rem;
+        }
+
+        @include phones{
+            font-size: 1.8rem;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         margin-top: 4rem;
+        @include phones{
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 2rem;
+            justify-content: center;
+            text-align: center;
+        
+        }
     }
 
     &__item {
         &:not(:first-child) {
             margin-left: 5rem;
+            @include phones{
+                margin-left: 0;
+            }
+        }
+        @include phones{
+            & a img{
+                display: inline;
+            }
         }
     }
 

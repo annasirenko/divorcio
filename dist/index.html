@@ -15,11 +15,17 @@
 <body>
     <header class="header__main">
         <div class="container">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
             <a href="#" class="header__main--logo">
                 <img src="./img/icons/logo.svg" alt="OnlineDivorcio Logo">
             </a>
             <nav class="navbar">
+                <a href="#" class="close-btn">&#10006;</a>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#freedom">Cómo funciona</a></li>
                     <li class="nav__item"><a href="#advantages">¿Por Qué Nosotros?</a></li>
@@ -27,8 +33,9 @@
                     <li class="nav__item"><a href="#compromise">FAQ</a></li>
                     <li class="nav__item"><a href="#footer">Contáctenos</a></li>
                     <li class="nav__item button"><a href="#hero">Empezar </a></li>
-                    <li class="nav__item"><a href="#">Iniciar Sesión </a></li>
+                    <li class="nav__item"><a href="#">Iniciar Sesión </a></li>                    
                 </ul>
+                <a href="#hero" class="button button__sm">Empezar </a></li>
             </nav>
         </div>
     </header>
@@ -52,6 +59,9 @@
                 </div>
                 <div class="form">
                     <div class="form__title">
+                        <h2>Vea si califica</h2>
+                    </div>
+                    <div class="form__title--adaptive">
                         <h2>Vea si califica</h2>
                     </div>
                     <div class="form__guarantee">
@@ -103,19 +113,26 @@
                         </div>
                         <div class="form__right">
                             <div class=" form__group form__group--right">
-                                <select name="state" id="state__selection" class="form__select custom-select">
+                                <select name="state" id="state__selection" class="form__select custom-select full">
                                     <option value="" selected disabled>Seleccione su estado</option>
                                     <option value="alabama">Alabama</option>
                                     <option value="alaska">Alaska</option>
                                 </select>
                                 <input type="text" class="form__input--short" name="phone" required
                                     placeholder="Nombre">
+                                    <input type=" text" class="form__input--short small input" name="last_name" required
+                                    placeholder="Apellido" >
                             </div>
                             <div class="form__group">
-                                <input type="text" class="form__input--long" name="email" required
-                                    placeholder="Ingrese su email" " >
-                                    <input type=" text" class="form__input--short" name="surname" required
-                                    placeholder="Apellido" " >
+                                <input type="text" class="form__input--long" name="email " required
+                                    placeholder="Ingrese su email" >
+                                    <select name="state" id="state__selection" class="form__select custom-select small select">
+                                        <option value="" selected disabled>Seleccione su estado</option>
+                                        <option value="alabama">Alabama</option>
+                                        <option value="alaska">Alaska</option>
+                                    </select>
+                                    <input type=" text" class="form__input--short full" name="last_name" required
+                                    placeholder="Apellido" >
                                     
                                 </div>
                                 <button class=" btn__form" type="submit">Verificar elegibilidad</button>
@@ -176,7 +193,11 @@
             </h2>
             <div class="freedom__columns">
                 <div class="freedom__img">
-                    <img src="./img/bg-2.png" alt="">
+                    <picture>
+                        <source srcset="./img/bg-2-sm.png" media="(max-width: 1024px)">
+                        <source srcset="./img/bg-2.png" media="(max-width: 2560px)">
+                            <img src="./img/bg-2.png" srcset="./img/bg-2.png" alt="freedom picture">
+                    </picture>
                 </div>
 
                 <ul class="freedom__list">

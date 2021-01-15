@@ -1,6 +1,12 @@
 #hero {
     min-height: 80rem;
-    background: url('./img/bg-1.png') no-repeat right top;
+    
+    @include desktopLg{
+        background: url('./img/bg-1.png') no-repeat right top;
+    }
+    @include tabletsPro{
+        background: url('./img/bg-1-small.png') no-repeat right top;
+    }
 }
 
 .hero {
@@ -24,6 +30,9 @@
         @include tablets {
             max-width: 73.6rem;
         }
+        @include phones{
+            max-width: 41rem;
+          }
     }
 
     &__desc {
@@ -33,6 +42,13 @@
     &__title {
         font-size: 5.4rem;
         line-height: 1.3;
+        @include tabletsPro{
+            font-size: 3.4rem;
+        }
+        @include phones{
+            font-size: 2.4rem;
+            width: 54%;
+        }
     }
 
     &__item {
@@ -44,6 +60,10 @@
 
         &:nth-child(3) {
             background-position-y: 1.3rem;
+        }
+        @include phones{
+            font-size: 1.4rem;
+            padding-left: 3rem;
         }
 
 
@@ -63,6 +83,15 @@
     margin: 0 auto;
     margin-top: 11rem;
     max-height: 25rem;
+    @include tabletsPro{
+        flex-direction: column;
+        align-items: center;
+        max-height: 100%;
+        
+    }
+    @include phones{
+        width:100%;
+    }
     // &::before{
     //     content: 'Vea si califica';
     //     position: absolute;
@@ -98,6 +127,15 @@
         position: absolute;
         top: -4.5rem;
         left: 19.7rem;
+        @include tabletsPro{
+            left: -0.3rem;
+        }
+        @include tablets{
+            left: -0.21rem;
+        }
+        @include phones{
+            left: -0.21rem;
+        }
     }
 
     &__chevron {
@@ -116,6 +154,9 @@
             width: 6rem;
             right: -2.7rem;
             top: 0;
+            @include phones{
+                z-index: -1;
+            }
 
             &::before {
                 content: '';
@@ -126,6 +167,9 @@
                 width: 100%;
                 background: $violet;
                 transform: skew(-50deg, 0deg);
+                @include phones{
+                    z-index: -1;
+                }
             }
 
             &::after {
@@ -137,6 +181,9 @@
                 width: 100%;
                 background: $violet;
                 transform: skew(48deg, 0deg);
+                @include phones{
+                    z-index: -1;
+                }
                 // box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             }
         }
@@ -144,14 +191,35 @@
         & span {
             font-size: 4rem;
             margin-left: 1.6rem;
+            @include tablets{
+                font-size: 2.6rem;
+            }
+            @include phones{
+                font-size: 2rem;
+            }
         }
 
         & p {
             font-size: 1.8rem;
             margin-left: 1rem;
             line-height: 1.2;
+            @include tablets{
+                font-size: 1.6rem;
+            }
+            @include phones{
+                font-size: 1rem;
+            }
 
         }
+        @include tablets{
+            width: 44rem;
+        }
+        @include phones{
+            width: 26.7rem;
+            z-index: 0;
+            box-shadow:none
+
+    }
     }
 
     &__point {
@@ -196,11 +264,23 @@
 
         & span {
             font-size: 3.7rem;
+            @include phones{
+                font-size: 2rem;
+                margin-top: 1rem;
+            }
         }
 
         & p {
             text-transform: uppercase;
             font-size: 1.5rem;
+            @include phones{
+                font-size: 1rem;
+            }
+        }
+        @include phones{
+            width:7.7rem;
+            margin-left: 7rem;
+            box-shadow:none
         }
     }
 
@@ -209,6 +289,9 @@
     // }
     &__left {
         margin-right: 6.9rem;
+        @include phones{
+            margin-right: 0;
+        }
     }
 
     &__group {
@@ -217,6 +300,9 @@
 
         &--right {
             margin-top: 0;
+            @include phones{
+                display: flex;
+            }
         }
 
     }
@@ -227,6 +313,9 @@
     }
 
     &__title {
+        @include tabletsPro{
+            display: none;
+        }
         &--question {
             display: block;
             font-size: 1.8rem;
@@ -234,6 +323,10 @@
 
             &:nth-child(2) {
                 margin-top: 2.4rem;
+            }
+
+            @include tabletsPro{
+                font-size: 1.4rem;
             }
 
         }
@@ -290,6 +383,9 @@
             @include laptop {
                 font-size: 1.2rem;
             }
+            @include phones{
+                width: 100%;
+            }
 
         }
 
@@ -312,6 +408,13 @@
             @include laptop {
                 font-size: 1.2rem;
             }
+            @include phones{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-left: 0;
+               
+            }
+            
 
 
         }
@@ -347,12 +450,21 @@
         display: flex;
         justify-content: center;
         margin-top: .6rem;
+        @include phones{
+            font-size: 1rem;
+        }
     }
 }
 
 form {
     display: flex;
     align-items: flex-start;
+    @include tabletsPro{
+        flex-direction: column;
+        
+        
+    }
+ 
 }
 
 .btn__form {
@@ -375,5 +487,31 @@ form {
         position: absolute;
         right: 2.75rem;
         top: 1.75rem;
+    }
+}
+
+.full{
+    @include phones{
+        display: none;
+    }
+}
+
+.small{
+    display: none;
+    @include phones{
+        display: block;
+    }
+}
+
+.input{
+    @include phones{
+        margin-left: 1rem;
+    }
+}
+
+.select{
+    @include phones{
+        margin-top: 1rem;
+        width: 100%;
     }
 }

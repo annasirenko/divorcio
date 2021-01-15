@@ -26,6 +26,9 @@
         margin-top: 3.8rem;
         margin-bottom: 3.5rem;
         position: relative;
+        @include tabletsPro{
+            display: none;
+        }
     }
 
     &__slide {
