@@ -18,6 +18,13 @@
         height: 3.8rem;
     }
 
+    &__navbar{
+        display: flex;
+        @include tablets{
+        display: none;
+        }
+    }
+
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -49,15 +56,34 @@
             @include laptop {
                 width: 35%;
             }
+            @include phones{
+                width: 77%;
+            }
         }
 
         &--connection {
             margin-left: 11.2rem;
+            @include phones{
+                margin-left: 0;
+            }
         }
 
         &--phone {
             font-weight: 700;
             margin-bottom: .8rem;
+            @include phones{
+                margin-top: 1.6rem;
+            }
+        }
+        @include phones{
+            flex-direction: column;
+            font-size: 1.4rem;
+            border-top: .05rem solid #fff;
+            border-bottom: .05rem solid #fff; 
+            margin-top: 1.6rem;
+            margin-bottom: 1.8rem;
+            padding-top: 1.9rem;
+            padding-bottom: 2.1rem;
         }
     }
 
@@ -67,6 +93,19 @@
         font-size: 1.2rem;
         padding-bottom: 2rem;
         border-bottom: .05rem solid #fff;
+        @include tabletsPro{
+            @include tablets{
+                column-count: 6;
+            }
+        }
+        @include tablets{
+            column-count: 4;
+        }
+        @include phones{
+            column-count: 2;
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
     &__items {
@@ -95,6 +134,9 @@
     &__copyright {
         margin-top: 1.2rem;
         margin-bottom: 1.5rem;
+        @include phones{
+            margin-bottom: 1.2rem;
+        }
     }
 
     &__disclaimer{

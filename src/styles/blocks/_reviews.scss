@@ -1,6 +1,9 @@
 .reviews {
     padding: 7rem 0 5.3rem 0;
     position: relative;
+    @include phones{
+        padding-top: 4rem;
+    }
 
     &__container {
         display: flex;
@@ -17,6 +20,12 @@
     &__title {
         font-size: 3.6rem;
         font-weight: 700;
+        @include tabletsPro{
+            font-size: 3.2rem;
+        }
+        @include phones{
+            font-size: 2.4rem;
+        }
     }
 
 
@@ -26,9 +35,7 @@
         margin-top: 3.8rem;
         margin-bottom: 3.5rem;
         position: relative;
-        @include tabletsPro{
-            display: none;
-        }
+        
     }
 
     &__slide {
@@ -96,6 +103,9 @@
         justify-content: center;
         font-weight: bold;
         color: $orange-text;
+        @include phones{
+            display: none;
+        }
     }
 }
 
@@ -109,6 +119,9 @@
 .arrow {
     background-color: transparent;
     outline: none;
+    @include phones{
+        display: none;
+    }
 
     &__prev {
         position: absolute;

@@ -31,7 +31,7 @@
             max-width: 73.6rem;
         }
         @include phones{
-            max-width: 41rem;
+            max-width: 39rem;
           }
     }
 
@@ -91,6 +91,7 @@
     }
     @include phones{
         width:100%;
+        margin-top: 8rem;
     }
     // &::before{
     //     content: 'Vea si califica';
@@ -207,7 +208,7 @@
                 font-size: 1.6rem;
             }
             @include phones{
-                font-size: 1rem;
+                font-size: .9rem;
             }
 
         }
@@ -215,7 +216,7 @@
             width: 44rem;
         }
         @include phones{
-            width: 26.7rem;
+            width: 25.7rem;
             z-index: 0;
             box-shadow:none
 
@@ -266,7 +267,7 @@
             font-size: 3.7rem;
             @include phones{
                 font-size: 2rem;
-                margin-top: 1rem;
+                margin-top: 1.3rem;
             }
         }
 
@@ -278,7 +279,7 @@
             }
         }
         @include phones{
-            width:7.7rem;
+            width:6.7rem;
             margin-left: 7rem;
             box-shadow:none
         }
@@ -315,6 +316,12 @@
     &__title {
         @include tabletsPro{
             display: none;
+        }
+        &--adaptive{
+            display: none;
+            @include tabletsPro{
+                display: block;
+            }
         }
         &--question {
             display: block;

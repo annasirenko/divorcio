@@ -14,12 +14,28 @@
         font-size: 3.6rem;
         font-weight: bold;
         color: $orange-text;
+
+        @include tabletsPro {
+            font-size: 3.2rem;
+        }
+
+        @include phones {
+            font-size: 2.4rem;
+        }
     }
 
     &__subtitle {
         margin-top: 1rem;
         line-height: 1.3;
         text-align: center;
+
+        @include tablets {
+            font-size: 1.4rem;
+        }
+
+        @include phones {
+            display: none;
+        }
     }
 
     &__list {
@@ -29,6 +45,10 @@
         // grid-gap: 2rem;
         row-gap: 4rem;
         margin-top: 3.7rem;
+
+        @include tabletsPro {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__item {
@@ -40,12 +60,21 @@
             color: #4a4a4a;
             font-weight: bold;
             line-height: 1.3;
+            @include phones{
+                display: none;
+            }
         }
 
         & p {
             color: #4a4a4a;
             width: 80%;
             margin-top: .7rem;
+
+            @include phones {
+                font-size: 1.4rem;
+                width:73%;
+
+            }
         }
     }
 
@@ -61,5 +90,8 @@
 
     &__text {
         margin-left: 1.5rem;
+        @include tabletsPro{
+            margin-left: 3.5rem;
+        }
     }
 }
