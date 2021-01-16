@@ -76,6 +76,15 @@
 
         &:nth-child(3) {
             background-position-y: 1.3rem;
+            @include phones{
+                background-position-y: 0rem;
+            }
+        }
+
+        &:last-child {            
+            @include phones{
+                background-position-y: 0rem;
+            }
         }
 
         @include phones {
@@ -253,9 +262,7 @@
             z-index: 0;
             box-shadow: none
         }
-        @include phonesM{
-            width: 25rem;
-        }
+        
         @include phonesM{
             width: 19.6rem;
         }
