@@ -36,6 +36,13 @@ $wine: linear-gradient(180deg, rgba(248,0,0,1) 0%, rgba(159,4,27,1) 100%);
   @include phones{
     max-width: 39rem;
   }
+  @include phonesM{
+    max-width: 33rem;
+  }
+  @include phonesSm{
+    max-width: 31rem;
+  }
+ 
 }
 
 @mixin desktopHd(){
@@ -74,6 +81,17 @@ $wine: linear-gradient(180deg, rgba(248,0,0,1) 0%, rgba(159,4,27,1) 100%);
 
 @mixin phones() {
   @media screen and (max-width: 480px) {
+    @content;
+  }
+  }
+  
+@mixin phonesM() {
+  @media screen and (max-width: 380px) {
+    @content;
+  }
+}
+@mixin phonesSm() {
+  @media screen and (max-width: 320px) {
     @content;
   }
 }

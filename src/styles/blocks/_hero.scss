@@ -41,6 +41,12 @@
         @include phones {
             max-width: 39rem;
         }
+        @include phonesM{
+            max-width: 33rem;
+          }
+          @include phonesSm{
+            max-width: 31rem;
+          }
     }
 
     &__desc {
@@ -247,6 +253,15 @@
             z-index: 0;
             box-shadow: none
         }
+        @include phonesM{
+            width: 25rem;
+        }
+        @include phonesM{
+            width: 19.6rem;
+        }
+        @include phonesSm{
+            width: 17.5rem;
+        }
     }
 
     &__point {
@@ -452,10 +467,18 @@
             }
 
             @include phones {
-                padding-left: 2rem;
+                padding-left: 1rem;
                 padding-right: 2rem;
                 margin-left: 0;
 
+            }
+            @include phonesM{
+                padding-left: 1.1rem;
+                padding-right: 0;
+            }
+            @include phonesSm{
+                padding-left: 0;
+                
             }
 
 
@@ -496,6 +519,9 @@
 
         @include phones {
             font-size: 1rem;
+        }
+        @include phonesM{
+            text-align: center;
         }
     }
 }

@@ -89,6 +89,13 @@ img {
   @include phones{
     max-width: 39rem;
   }
+  @include phonesM{
+    max-width: 33rem;
+  }
+  @include phonesSm{
+    max-width: 31rem;
+  }
+ 
 
 }
 

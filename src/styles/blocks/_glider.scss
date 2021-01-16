@@ -10,6 +10,9 @@
   @include phones {
     width: 81%;
   }
+  @include phonesM{
+    width: 85%;
+  }
 
 }
 
