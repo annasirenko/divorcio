@@ -143,6 +143,9 @@
       @include phones {
         left: 32rem;
       }
+      @include phonesSm{
+        left: 27rem;
+      }
     }
   }
 }
