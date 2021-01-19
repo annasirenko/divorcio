@@ -168,12 +168,11 @@
     cursor: pointer;
 
     & span {
-      background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
-      padding: .2rem 2rem;
-      margin: .7rem 0;
       display: block;
-
-
+      background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
+      padding: .2rem 1.5rem;
+      margin: .7rem 0;
+      border-radius:1rem;
     }
   }
 }

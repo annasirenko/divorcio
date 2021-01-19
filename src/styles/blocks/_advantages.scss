@@ -118,6 +118,9 @@
         &--logo {
             width: 17.8rem;
             height: 5.6rem;
+            @include phonesM{
+                height: 4.4rem;
+            }
         }
 
         &--title {
@@ -167,6 +170,7 @@
         @include phones {
             width: 100%;
             margin-top: 0;
+            border-radius:2rem;
         }
 
 
@@ -217,8 +221,17 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-            width: 60%;
+            width: 80%;
             margin-top: 1.1rem;
+            @include tabletsPro{
+                width: 41%;
+            }
+            @include tablets{
+                width: 52%;
+            }
+            @include phones{
+                width: 90%;
+            }
         }
 
         &_item {
